@@ -2,9 +2,15 @@ html{
   font-size: 16px;
   font-family: helvetica,sans-serif;
   text-align: left;
-  color:red;
 }
 
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+/* Header */
 
 header{
   display: flex;
@@ -29,3 +35,54 @@ header li{
   display:inline;
   padding-left: 2rem;
 }
+
+/* general card layout */
+
+.card{
+display:flex;
+
+}
+.large .media{
+align-items: flex-start;
+width:60%;
+height:auto;
+}
+
+.large .content{
+  width:40%;
+  height:auto;
+}
+
+.small .media{
+align-items: flex-start;
+width:35%;
+height:auto;
+}
+
+.small .content{
+  width:65%;
+  height:auto;
+}
+
+.section{
+
+}
+
+
+
+/* Container 1 */
+/* Container 2 */
+/* Container 3 */
+
+.wrap{
+  flex-wrap: wrap;
+  margin:auto;
+  justify-content: space-between;
+}
+.wrap .media{
+  max-width: 30%;
+
+}
+
+
+/* Container 4 */
