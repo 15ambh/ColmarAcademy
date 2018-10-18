@@ -1,0 +1,192 @@
+html{
+  font-size: 16px;
+  font-family: helvetica,sans-serif;
+  text-align: left;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+h1,h2,h3,strong{
+  font-weight: bold;
+}
+
+/* Header */
+
+header{
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 2rem;
+}
+header div{
+  display:flex;
+  line-height: 2;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+header strong{
+  font-weight: bold;
+}
+
+
+header li{
+  display:inline;
+  padding-left: 2rem;
+}
+
+/* general card layout */
+
+.card{
+display:flex;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+}
+
+.media {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+
+.image{
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1 1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* container 1,2,4 general*/
+.large h1{
+  font-size: 3rem;
+}
+.large h2{
+  font-size: 2rem;
+}
+.large h3{
+  font-size: 1.5rem;
+}
+.large p, .large div{
+  font-size: 1.25rem;
+}
+
+.large .media {
+width:60%;
+padding: 2rem 1.5rem;
+
+}
+
+.large .content{
+  width:40%;
+  height:auto;
+  padding:1.5rem 0;
+}
+
+
+.small h1{
+  font-size: 1rem;
+}
+
+.small p, .small a {
+  font-size: 0.75rem;
+}
+
+.card.small{
+  height: 30%;
+}
+.small .media{
+width:35%;
+padding: .5rem 1rem;
+}
+
+.small .image{
+  height: 100%;
+}
+
+.small .content{
+  width:65%;
+  padding:0.5rem 0;
+
+}
+
+
+
+/* Exceptions */
+
+
+#one .content,.small .content{
+  justify-content:center;
+}
+
+
+/*Container 1 */
+#one .image{
+
+}
+
+#one{
+background-color: gainsboro;
+}
+
+ #one h1,#one p, #one .button{
+  margin: 1.5rem 0;
+}
+
+#one .content .group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+  flex-grow: 1;
+  margin: 2rem 0;
+}
+
+
+.button{
+  text-align: center;
+  padding: .5rem 0;
+  background-color: dimgrey;
+  color: white;
+  width: 100%;
+}
+
+
+/* Container 2 */
+ #two h2 {
+ margin: 2rem 0 1.5rem 0;
+}
+#two .media div {
+  margin-top: 1.5rem;
+}
+
+#two .content{
+  justify-content: space-between;
+}
+
+/* Container 3 */
+
+.wrap{
+  flex-wrap: wrap;
+  margin:auto;
+  justify-content: space-between;
+}
+.wrap .media{
+  max-width: 30%;
+
+}
+
+
+/* Container 4 */
