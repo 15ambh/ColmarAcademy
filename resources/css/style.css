@@ -2,8 +2,11 @@ html{
   font-size: 16px;
   font-family: helvetica,sans-serif;
   text-align: left;
-  color: dimgray;
+  color: #565957;
   box-sizing: border-box;
+}
+p,h5 {
+color: gray;
 }
 
 img{
@@ -40,7 +43,7 @@ header{
   height: 4rem;
   justify-content: space-between;
   align-items: center;
-  padding:0 2rem;
+  padding:0 1.5rem;
 }
 header div{
   display:flex;
@@ -51,32 +54,28 @@ header div{
 
 header li{
   display:inline;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .card{
   display:flex;
-  padding: 2rem 0;
-
+  padding: 0;
 }
 
 /* first, Second and fourth Container */
 
-
   .media{
-   /* display: flex;
-   flex-direction: column; */
    width:60%;
    height: auto;
-   padding: 1rem 1.5rem;
+   padding: 2rem 1.5rem;
   }
 
   .media .image{
-  background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position:bottom;
   background-size: cover;
 }
+
 .content{
   width:40%;
 }
@@ -84,9 +83,7 @@ header li{
 
 
 /* Second Container and fourth Container */
-#two .large{
-  height: 28rem;
-}
+
 .card .small{
   padding: 1rem;
   width:100%;
@@ -104,9 +101,11 @@ width: auto;
 .small .content{
   width:65%;
 }
+
 .smallgroup{
-padding: 1rem 0 1rem 1rem;
+padding: 1rem;
 }
+
 .smallgroup h4, .smallgroup p{
   padding-bottom: .5rem;
 }
@@ -133,6 +132,9 @@ width:40%;
 #one{
 background-color: lightgray;
 }
+.group{
+  padding-right: 1.5rem;
+}
 
 .button{
   color: white;
@@ -151,6 +153,33 @@ background-color: lightgray;
   }
 
   /* Second Container */
+  #two .large{
+  height: 28rem;
+  background-image: url(../images/information-main.jpg);
+  }
+#two .content{
+padding:1rem 0;
+}
+
+    /* small images */
+  #orientation{
+    background-image: url(../images/information-orientation.jpg);
+  }
+  #campus{
+    background-image: url(../images/information-campus.jpg);
+  }
+  #guest{
+    background-image: url(../images/information-guest-lecture.jpg);
+  }
+    /* Small images end */
+
+  #two .small:last-child{
+      background-color: lightgray;
+  }
+  #two .small:{
+      background-color: lightgray;
+  }
+
   #two h2{
     padding-top: 2rem;
   }
@@ -220,7 +249,56 @@ background-color: lightgray;
   font-weight: normal;
 }
 
+/* Fourth Container */
+
 #four video{
   width: 100%;
   height: auto;
+}
+
+#four .small:first-child{
+  background-color: lightgray;
+}
+#four .small .content{
+margin: auto 0;
+}
+
+/* small images */
+#fisma{
+background-image: url(../images/thesis-fisma.jpg);
+}
+#nowthen{
+background-image: url(../images/thesis-now-and-then.jpg);
+}
+/* Small images end */
+#four h3{
+    text-align: center;
+    padding:2rem 0;
+}
+#four .media h4{
+  padding:1.5rem 0rem 0.5rem 0;
+}
+#four .media p{
+  padding-bottom:2rem;
+}
+#four .card{
+  padding:0;
+}
+#four .media{
+  padding-top: 0;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1.5rem;
+  border-top: 1px solid lightgray;
+}
+
+footer li{
+  display:inline;
+  padding-left: 1rem;
 }
