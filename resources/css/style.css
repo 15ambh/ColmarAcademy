@@ -8,30 +8,23 @@ html{
 p,h5 {
 color: gray;
 }
-
 img{
     max-width: 100%;
     height: auto;
     display:block;
   }
-
 h1{
   font-size: 3rem;
-
 }
 h2{
   font-size: 2.5rem;
-
 }
 h3{
   font-size: 2rem;
-
 }
 h4{
   font-size: 1.25rem;
 }
-
-
 h1,h2,h3,h4,strong{
   font-weight: bold;
 }
@@ -43,7 +36,7 @@ header{
   height: 4rem;
   justify-content: space-between;
   align-items: center;
-  padding:0 1.5rem;
+  padding: 0 1.5rem;
 }
 header div{
   display:flex;
@@ -57,37 +50,55 @@ header li{
   padding-left: 1rem;
 }
 
-.card{
-  display:flex;
-  padding: 0;
+header .icon{
+  display:none;
 }
+
+ @media only screen and (max-width: 623px){
+   header ul{
+     display:none;
+   }
+   header strong, header span{
+     display:none;
+   }
+
+   header .icon{
+     display:block;
+      }
+ }
+
+/* All Containers */
+ .card{
+   display:flex;
+   padding: 2rem 1.5rem;
+ }
 
 /* first, Second and fourth Container */
 
-  .media{
+.media{
    width:60%;
    height: auto;
-   padding: 2rem 1.5rem;
-  }
+   padding-right: 1.5rem;
+}
 
-  .media .image{
+.media .image{
   background-repeat: no-repeat;
-  background-position:bottom;
-  background-size: cover;
+  background-position:center;
+  background-size:cover;
+
 }
 
 .content{
   width:40%;
 }
 
-
-
 /* Second Container and fourth Container */
 
 .card .small{
+  /* border: 1rem solid white; */
   padding: 1rem;
   width:100%;
-  min-height:28.5%;
+  min-height: 26.5%;
 }
 .small .media{
  width:35%;
@@ -97,6 +108,7 @@ header li{
 .small .image{
 height: 100%;
 width: auto;
+min-height: 100px;
 }
 .small .content{
   width:65%;
@@ -108,6 +120,74 @@ padding: 1rem;
 
 .smallgroup h4, .smallgroup p{
   padding-bottom: .5rem;
+}
+
+
+
+@media only screen and (max-width: 970px) {
+  .media{
+    width: 55%
+  }
+  .content{
+    width:45%;
+  }
+}
+ @media only screen and (max-width: 820px) {
+  .media{
+    width: 50%
+  }
+  .content{
+    width:50%;
+  }
+}
+@media only screen and (max-width: 723px) {
+  .card{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .media{
+    width: 80%;
+    padding-right: 0rem;
+  }
+  .content{
+    width:80%;
+    padding-top: 2rem;
+  }
+  .card .small{
+  width:93.5%;
+}
+ .small .media{
+  min-height: 140px;
+  }
+
+}
+@media only screen and (max-width: 623px){
+  .card{
+    padding-left:1rem;
+    padding-right: 1rem;
+  }
+  .media{
+    width: 100%;
+
+  }
+  .content{
+    width:100%;
+
+  }
+}
+@media only screen and (max-width: 450px){
+  .card{
+    padding-top: 0rem;
+    padding-left:0rem;
+    padding-right: 0rem;
+  }
+  .small .media{
+    width: 100%;
+    height: 12rem;
+  }
+  .small .content{
+    width: 100%;
+  }
 }
 
 
@@ -123,17 +203,17 @@ padding: 1rem;
 
 #one .content{
 margin: auto 0;
-width:40%;
+
 }
 
 #one h1,#one h3{
-  padding-bottom:3rem;
+padding-bottom:3rem;
 }
 #one{
 background-color: lightgray;
 }
 .group{
-  padding-right: 1.5rem;
+
 }
 
 .button{
@@ -146,72 +226,147 @@ background-color: lightgray;
 .button:hover{
   background-color: slategray;
   transition-duration: 500ms;
-
 }
 .button:active{
-    background-color:DARKSLATEGRAY;
-  }
-
-  /* Second Container */
-  #two .large{
-  height: 28rem;
-  background-image: url(../images/information-main.jpg);
-  }
-#two .content{
-padding:1rem 0;
+  background-color:DARKSLATEGRAY;
 }
 
+@media only screen and (max-width: 1050px) {
+  #one .media .image{
+    height: 27rem;
+  }
+}
+
+@media only screen and (max-width: 723px) {
+  #one .media .image{
+    height: 20rem;
+  }
+  #one h1{
+    font-size: 2.5rem;
+  }
+  #one h3{
+    font-size: 1.75rem;
+  }
+
+  #one h1, #one h3{
+    padding-bottom: 2rem;
+  }
+  #one h3{
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 623px) {
+
+}
+
+@media only screen and (max-width: 450px) {
+  #one .media .image{
+    height: 17rem;
+  }
+  .group{
+    padding-left:1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+  /* Second Container */
+#twoimage{
+  height: 28rem;
+  background-image: url(../images/information-main.jpg);
+}
+#two .content{
+  margin-top: -1rem;
+}
+
+#two p{
+  color: #565957;
+}
+
+
     /* small images */
-  #orientation{
-    background-image: url(../images/information-orientation.jpg);
-  }
-  #campus{
-    background-image: url(../images/information-campus.jpg);
-  }
-  #guest{
-    background-image: url(../images/information-guest-lecture.jpg);
-  }
+#orientation{
+  background-image: url(../images/information-orientation.jpg);
+}
+#campus{
+  background-image: url(../images/information-campus.jpg);
+}
+#guest{
+  background-image: url(../images/information-guest-lecture.jpg);
+}
     /* Small images end */
 
-  #two .small:last-child{
-      background-color: lightgray;
+#two .small:last-child{
+  background-color: lightgray;
+  /* border-color: lightgray; */
+
+}
+#two .small:{
+  background-color: lightgray;
+}
+
+#two h2{
+  padding-top: 2rem;
+}
+#two p{
+  color: #565957;
+}
+#two .media p{
+  padding: 1.5rem 0;
+}
+
+a{
+  text-decoration: none;
+  color:blue;
+}
+a:hover{
+  text-decoration: underline;
+  color:darkblue;
+}
+a:visited{
+color: teal;
+
+}
+
+@media only screen and (max-width: 1050px) {
+  #twoimage{
+    height: 20rem;
   }
-  #two .small:{
-      background-color: lightgray;
+}
+@media only screen and (max-width: 723px) {
+
+  #two .content{
+    /* margin-top: 0rem; */
   }
 
-  #two h2{
-    padding-top: 2rem;
-  }
-  #two .media p{
-    padding: 1.5rem 0;
-  }
-
-  a{
-    text-decoration: none;
-    color:blue;
-  }
-  a:hover{
-    text-decoration: underline;
-    color:darkblue;
-  }
-  a:visited{
-    color: teal;
-
+}
+@media only screen and (max-width: 450px){
+  #two .media.large{
+    display: none;
   }
 
+  #orientation{
+    background-image: url(../images/information-orientation-mobile.jpg);
+  }
+  #campus{
+    background-image: url(../images/information-campus-mobile.jpg);
+  }
+  #guest{
+    background-image: url(../images/information-guest-lecture-mobile.jpg);
+  }
+
+}
 
 /* Third Container */
 #three{
   background-color: lightgray;
-  padding: 1rem 0 2rem 0;
+  padding: 2rem 3rem 0 3rem;
 }
-
 .wrap{
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 0rem 3.5rem;
 }
 
 #three .box{
@@ -221,7 +376,7 @@ padding:1rem 0;
   height: auto;
   overflow: hidden;
   background-color: white;
-  border:1rem solid lightgray;
+  margin: 1rem 1rem;
 }
 
 .image-box{
@@ -237,9 +392,8 @@ padding:1rem 0;
 
 #three h3{
   text-align: center;
-  padding: 1rem 0;
+  margin-bottom: -1rem;
 }
-
 
 #three h5{
   text-transform: uppercase;
@@ -249,18 +403,61 @@ padding:1rem 0;
   font-weight: normal;
 }
 
+@media only screen and (max-width: 1050px) {
+  .wrap{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+@media only screen and (max-width: 970px) {
+   #three .box{
+    max-width: 44%;
+    min-width: 40%;
+  }
+}
+@media only screen and (max-width: 623px){
+  #three{
+    padding: 2rem 0rem 0 0rem;
+  }
+   .wrap{
+    padding: 0rem 1rem;
+  }
+  #three h3{
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 450px){
+#three{
+  background-color: white;
+}
+
+.image-box, .text_box h5, .text_box p{
+  display: none;
+
+}
+#three .box{
+  min-width: 100%;
+  background-color: lightgray;
+  margin:1rem 1rem -.5rem 1rem;
+}
+}
+
 /* Fourth Container */
 
 #four video{
   width: 100%;
   height: auto;
 }
-
 #four .small:first-child{
   background-color: lightgray;
+  /* border-color: lightgray; */
 }
 #four .small .content{
-margin: auto 0;
+  margin: auto 0;
+}
+#four{
+  padding-top: 2rem;
 }
 
 /* small images */
@@ -273,32 +470,50 @@ background-image: url(../images/thesis-now-and-then.jpg);
 /* Small images end */
 #four h3{
     text-align: center;
-    padding:2rem 0;
+    /* padding:2rem 0 0 0; */
 }
 #four .media h4{
   padding:1.5rem 0rem 0.5rem 0;
 }
 #four .media p{
-  padding-bottom:2rem;
+
 }
-#four .card{
-  padding:0;
+
+#four .media{
+
+}
+@media only screen and (max-width: 450px){
+#four .content, #four h4, #four p{
+  display:none;
 }
 #four .media{
-  padding-top: 0;
+  padding-top: 1rem;
+}
+
+
 }
 
 /* Footer */
 footer{
   display: flex;
-  height: 4rem;
+  height: 2rem;
   justify-content: space-between;
-  align-items: center;
-  padding:0 1.5rem;
+  align-items: flex-start;
+  padding:1rem;
   border-top: 1px solid lightgray;
 }
 
 footer li{
   display:inline;
   padding-left: 1rem;
+
+}
+@media only screen and (max-width: 623px){
+footer{
+  align-items: flex-end;
+}
+footer ul{
+  display: none;
+}
+
 }
