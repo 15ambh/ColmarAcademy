@@ -1,9 +1,11 @@
+@-ms-viewport{
+  width: device-width;
+}
 html{
   font-size: 16px;
   font-family: helvetica,sans-serif;
   text-align: left;
   color: #565957;
-  box-sizing: border-box;
 }
 p,h5 {
 color: gray;
@@ -12,7 +14,7 @@ img{
     max-width: 100%;
     height: auto;
     display:block;
-  }
+}
 h1{
   font-size: 3rem;
 }
@@ -95,7 +97,6 @@ header .icon{
 /* Second Container and fourth Container */
 
 .card .small{
-  /* border: 1rem solid white; */
   padding: 1rem;
   width:100%;
   min-height: 26.5%;
@@ -140,7 +141,7 @@ padding: 1rem;
     width:50%;
   }
 }
-@media only screen and (max-width: 723px) {
+@media only screen and (max-width: 768px) {
   .card{
     flex-wrap: wrap;
     justify-content: center;
@@ -175,7 +176,7 @@ padding: 1rem;
 
   }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 480px){
   .card{
     padding-top: 0rem;
     padding-left:0rem;
@@ -237,7 +238,7 @@ background-color: lightgray;
   }
 }
 
-@media only screen and (max-width: 723px) {
+@media only screen and (max-width: 768px) {
   #one .media .image{
     height: 20rem;
   }
@@ -260,7 +261,7 @@ background-color: lightgray;
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   #one .media .image{
     height: 17rem;
   }
@@ -299,8 +300,6 @@ background-color: lightgray;
 
 #two .small:last-child{
   background-color: lightgray;
-  /* border-color: lightgray; */
-
 }
 #two .small:{
   background-color: lightgray;
@@ -334,14 +333,14 @@ color: teal;
     height: 20rem;
   }
 }
-@media only screen and (max-width: 723px) {
+@media only screen and (max-width: 768px) {
 
   #two .content{
     /* margin-top: 0rem; */
   }
 
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 480px){
   #two .media.large{
     display: none;
   }
@@ -427,7 +426,7 @@ color: teal;
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 480px){
 #three{
   background-color: white;
 }
@@ -451,7 +450,6 @@ color: teal;
 }
 #four .small:first-child{
   background-color: lightgray;
-  /* border-color: lightgray; */
 }
 #four .small .content{
   margin: auto 0;
@@ -482,7 +480,7 @@ background-image: url(../images/thesis-now-and-then.jpg);
 #four .media{
 
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 480px){
 #four .content, #four h4, #four p{
   display:none;
 }
